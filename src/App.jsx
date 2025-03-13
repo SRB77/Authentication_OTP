@@ -1,12 +1,21 @@
-import React from 'react'
-import Inputform from './Inputform/Inputform';
+// App.js
+import React from "react";
+import "./App.css";
 
 function App() {
   return (
     <>
-      <h1>Hello Home Page here . </h1>
+      <div className="super">
+        <nav className="navbar">
+          <h2 className="navbar__title">Let's Authenticate Together</h2>
+          <div className="navbar__buttons">
+            <button className="btn btn--login">Login</button>
+            <button className="btn btn--register">Register</button>
+          </div>
+        </nav>
+      </div>
     </>
   );
 }
 
-export default App
+export default App;

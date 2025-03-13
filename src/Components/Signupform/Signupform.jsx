@@ -1,11 +1,11 @@
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "./Signupform.css";
-import userData from "../../src/user.json";
+import userData from "../../../src/user.json";
 function Signupform() {
-    const [user ,setUser] = useState(userData);
-    const [FirstName, setFirstName] = useState("");
-    const [LastName, setLastName] = useState("");
-    const [Email, setEmail] = useState("");
+  const [user, setUser] = useState(userData);
+  const [FirstName, setFirstName] = useState("");
+  const [LastName, setLastName] = useState("");
+  const [Email, setEmail] = useState("");
 
   function firstNameChange(event) {
     setFirstName(event.target.value);

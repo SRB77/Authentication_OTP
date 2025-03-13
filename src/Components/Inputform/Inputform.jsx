@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './Inputform.css'
-import userData from '../../src/user.json'
+import userData from '../../user.json'
 function Inputform() {
     function firstNameChange(event){
         setFirstName(event.target.value);

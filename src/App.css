@@ -1,0 +1,67 @@
+/* App.css */
+:root {
+    --primary-gradient: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    --navbar-gradient: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(115, 131, 149, 1) 100%);
+    --dark-bg: rgb(32, 29, 29);
+    --light-text: aliceblue;
+    --navbar-width: min(90%, 800px);
+}
+
+body {
+    background: var(--primary-gradient);
+    min-height: 100vh;
+    min-width: 100vw;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    position: sticky;
+    top: 5px;
+    left: 50%;
+    /* transform: translateX(-50%); */
+    width: var(--navbar-width);
+    padding: 1rem 2rem;
+    background: var(--navbar-gradient);
+    color: var(--light-text);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    margin: 20px auto;
+    transition: all 0.3s ease;
+}
+
+.navbar__title {
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.navbar__buttons {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.btn {
+    padding: 0.8rem 1.8rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    letter-spacing: 0.5px;
+}
+.btn--login{
+    background-color: aliceblue;
+    color: rgb(15, 13, 13);
+}
+.btn--login:hover {
+    background-color: rgb(209, 216, 223);
+}
+.btn--register{
+    background-color: rgb(24, 20, 20);
+}

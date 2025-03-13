@@ -4,8 +4,8 @@ import './index.css'
 import * as ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from './App.jsx'
-import Inputform from './Inputform/Inputform.jsx';
-import Signupform from './Signupform/Signupform.jsx'
+import Inputform from './Components/Inputform/Inputform.jsx';
+import Signupform from './Components/Signupform/Signupform.jsx'
 const router = createBrowserRouter([
   {
     path: "/Login",
