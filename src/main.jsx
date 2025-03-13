@@ -1,0 +1,27 @@
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import './index.css'
+import * as ReactDOM from "react-dom/client";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import App from './App.jsx'
+import Inputform from './Inputform/Inputform.jsx';
+import Signupform from './Signupform/Signupform.jsx'
+const router = createBrowserRouter([
+  {
+    path: "/Login",
+    element: <Inputform/>,
+  },
+  {
+    path: "/Signup",
+    element: <Signupform/>,
+  },
+  {
+    path: "/",
+    element: <App/>,
+  },
+]);
+createRoot(document.getElementById("root")).render(
+  <StrictMode>
+    <RouterProvider router={router} />
+  </StrictMode>
+);
