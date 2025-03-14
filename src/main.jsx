@@ -6,7 +6,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from './App.jsx'
 import Inputform from './Components/Inputform/Inputform.jsx';
 import Signupform from './Components/Signupform/Signupform.jsx'
-const router = createBrowserRouter([
+export const router = createBrowserRouter([
   {
     path: "/Login",
     element: <Inputform/>,

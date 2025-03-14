@@ -21,19 +21,21 @@ function Signupform() {
   }, [user]);
 
   function handleSignup() {
-    let userInfo = user.filter((data) => {
-      return data.email === Email;
+    let userInfo = user.some((data) => {
+      return data.email.toLowerCase() === Email.toLowerCase();
     });
-    if (userInfo.length > 0) {
+    if (userInfo) {
       alert("User Already Exist");
       console.log(userInfo);
     } else {
-      setUser({
-        firstname: FirstName,
-        lastname: LastName,
-        email: Email,
-      });
+      setUser(
+        {
+          firstname: FirstName,
+          lastname: LastName,
+          email: Email,
+        });
       alert(`data added .`);
+      console.log(user);
       setFirstName("");
       setLastName("");
       setEmail("");
