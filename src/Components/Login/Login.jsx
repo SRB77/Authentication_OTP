@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import './Inputform.css'
+import './Login.css'
 import userData from '../../user.json'
-function Inputform() {
+function Login() {
     function firstNameChange(event){
         setFirstName(event.target.value);
     }
@@ -58,10 +58,11 @@ function Inputform() {
         />
         <br />
         <button onClick={handleLogin}>LogIn</button>
-        <button>SignUP</button>
+        {/* This will used once logic got defined .  */}
+        {/* <button>SignUP</button> */}
       </div>
     </>
   );
 }
 
-export default Inputform
+export default Login

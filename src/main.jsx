@@ -4,12 +4,12 @@ import './index.css'
 import * as ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from './App.jsx'
-import Inputform from './Components/Inputform/Inputform.jsx';
+import Login from './Components/Login/Login.jsx';
 import Signupform from './Components/Signupform/Signupform.jsx'
 export const router = createBrowserRouter([
   {
     path: "/Login",
-    element: <Inputform/>,
+    element: <Login/>,
   },
   {
     path: "/Signup",

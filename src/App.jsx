@@ -18,8 +18,8 @@ function App() {
         <nav className="navbar">
           <h2 className="navbar__title">Let's Authenticate Together</h2>
           <div className="navbar__buttons">
-            <button className="btn btn--login" onClick={handlelogin}>Login</button>
-            <button className="btn btn--register" onClick={handleregister}>Register</button>
+            <button className="btn--login" onClick={handlelogin}>Login</button>
+            <button className="btn--register" onClick={handleregister}>Register</button>
           </div>
         </nav>
       </div>
