@@ -47,7 +47,6 @@ function Login() {
           value={LastName}
           onChange={lastNameChange}
         />
-        <br />
         <label>Email</label>
         <input
           type="Email"
@@ -58,8 +57,6 @@ function Login() {
         />
         <br />
         <button onClick={handleLogin}>LogIn</button>
-        {/* This will used once logic got defined .  */}
-        {/* <button>SignUP</button> */}
       </div>
     </>
   );

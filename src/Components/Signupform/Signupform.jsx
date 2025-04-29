@@ -45,7 +45,7 @@ function Signupform() {
     <>
       <h1>Enter User for Signup</h1>
       <br />
-      <div className="container">
+      <div className="signupcontainer">
         <label>FirstName</label>
         <input
           type="text"
@@ -62,7 +62,6 @@ function Signupform() {
           value={LastName}
           onChange={lastNameChange}
         />
-        <br />
         <label>Email</label>
         <input
           type="Email"

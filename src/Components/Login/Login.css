@@ -1,0 +1,48 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+    padding:10px;
+    height: 29em;
+    width: 26em;
+    background-color: #ffff;
+    border: none;
+    border-radius: 1em;
+    box-shadow: 0 3px 20px gray;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+.container label{
+    color: black;
+    font-size: large;
+    font-weight: bold;
+}
+.container input {
+    padding: 0.5em;
+    width: 20em;
+    color: black;
+    font-size: medium;
+    font-weight: 700;
+}
+.container input:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.container button{
+    padding: 1em;
+    width: 8em;
+    background-color: rgb(65, 142, 250);
+    border-radius: 2em;
+    font-weight: bolder;
+    font-size: medium;
+}
+.container button:hover{
+    background-color: rgb(0, 125, 234);
+    transform: scale(0.95);
+    cursor: pointer;
+}
